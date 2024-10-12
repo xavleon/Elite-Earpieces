@@ -8,7 +8,7 @@ const TypingEffect: React.FC = () => {
   const [textArrayIndex, setTextArrayIndex] = useState<number>(0);
   const [isErasing, setIsErasing] = useState<boolean>(false);
 
-  const textArray: string[] = ["Javier", "fun", "a journey", "LIFE"];
+  const textArray: string[] = ["fun", "freedom", "a journey", "Me"];
   const typingDelay: number = 200;
   const erasingDelay: number = 100;
   const newTextDelay: number = 2000; // Delay between current and next text

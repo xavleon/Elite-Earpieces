@@ -1,3 +1,4 @@
+import TypingEffect from '../TypingEffect/TypingEffect';
 import styles from './Hero.module.css'
 import { FaFacebook,FaInstagram,FaSquareTwitter, FaSquareYoutube  } from "react-icons/fa6";
 
@@ -18,6 +19,8 @@ const Hero = () => {
             <button className={`${styles.btn} ${styles.btnDarken} ${styles.btnInline}`}>
                Our Products<i className={`${styles.bx} ${styles.bxRightArrowAlt}`}></i>
             </button>
+
+            
          </div>
          <div className={styles.bannerLinks} >
             <a href="#" title=""><i className={`${styles.bx} ${styles.bxlFacebook}`}>
@@ -30,6 +33,10 @@ const Hero = () => {
             <a href="#" title=""><i className={`${styles.bx} ${styles.bxlYoutube}`}></i><FaSquareYoutube /></a>
             
          </div>
+      </div>
+
+      <div className={styles.typingEffectContainer}>
+
       </div>
    </section>
 </div>

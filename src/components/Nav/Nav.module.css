@@ -10,6 +10,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 120px;
     ;
  
 
@@ -23,20 +24,31 @@
     text-decoration: none;
     margin-left:40px;
     
+
+    
+    
    
   }
+
+  .navbarLogo img{
+    padding-top: 30px;
+    margin-left: -100px;
+    transform: scale(0.7);
+    height: auto;
+  }
+
   
   .navbarMenu ul {
     display: flex;
     justify-content:flex-end   ;
-    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center;
+    align-items:center;
     font-family: "Rubik", sans-serif;
     font-weight: 600;
     gap: 20px;
+    padding-top: 5%;
 
     
   }
@@ -51,6 +63,7 @@
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    padding: 20px 20px
 
     
     
@@ -96,3 +109,5 @@
     transition: 0.3s ease;
 
   }
+
+
