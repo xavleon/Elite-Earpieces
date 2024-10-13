@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./TypingEffect.module.css"; // Import module.css styles
 
 const TypingEffect: React.FC = () => {

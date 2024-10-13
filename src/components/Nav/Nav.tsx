@@ -15,7 +15,7 @@ const Nav = () => {
           <li><a href="#services">Services</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
-          <a href="#signup" className={styles.signupBtn}>SIGN UP</a>
+          <button className="btn btn-primary px-8"> <a href="#signup">SIGN UP</a></button>
         </ul>
       </nav>
      

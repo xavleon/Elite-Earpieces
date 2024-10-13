@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-:global(body) {
+.container {
   font-family: 'Montserrat', sans-serif;
-  background-color: #000;
+  background-color: #080A0C;
   color: #eee;
 }
 
 .container {
-  height: 100vh;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom:50px;
+  padding-right:500px;
 }
 
 .container p {

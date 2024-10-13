@@ -1,4 +1,4 @@
-import TypingEffect from '../TypingEffect/TypingEffect';
+
 import styles from './Hero.module.css'
 import { FaFacebook,FaInstagram,FaSquareTwitter, FaSquareYoutube  } from "react-icons/fa6";
 
@@ -16,11 +16,11 @@ const Hero = () => {
                Enjoy award-winning stereo beats with wireless listening freedom and sleek,
                streamlined with premium padded and delivering first-rate playback.
             </p>
-            <button className={`${styles.btn} ${styles.btnDarken} ${styles.btnInline}`}>
+            <button className="btn btn-primary " >
                Our Products<i className={`${styles.bx} ${styles.bxRightArrowAlt}`}></i>
             </button>
 
-            
+           
          </div>
          <div className={styles.bannerLinks} >
             <a href="#" title=""><i className={`${styles.bx} ${styles.bxlFacebook}`}>
