@@ -1,5 +1,39 @@
 .cardComp{
-    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:40px;
+
     padding-top: 250px;
     padding-left: 50px;
+    flex-wrap: wrap;
+    background-color: transparent !important;
+    min-height: 70vh;
+    margin: 100px;
+    margin-top: 200px;
+}
+.cardComp img{
+    height: 200px;
+    border-radius: 40px;
+
+    width: 200px;
+}
+
+.cardBody{
+  
+    height:160px;
+    margin-top: 20px;
+
+    color: white !important
+}
+.cardI{
+    background-color: #12161B;
+    border-radius: 40px;
+    box-shadow: 0px 0px 15px 4px rgba(255, 255, 255, 0.3);    
+    cursor: pointer;
+}
+.cardBody p{
+    font-size: medium;
+    padding-top: 20px;
+   
 }

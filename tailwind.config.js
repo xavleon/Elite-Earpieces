@@ -13,7 +13,8 @@ export default {
           secondary: "#F59E0B", // Custom secondary color
           accent: "#10B981", // Custom accent color
           neutral: "#B3E240", // Custom neutral color (optional)
-          "base-100": "#12161B", // Background base color
+          "base-100": "#1E3E62", // Background base color
+          "base-200": "#12161B",
         },
       },
     ],
