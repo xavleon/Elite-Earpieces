@@ -11,7 +11,7 @@ const Cards = () => {
   };
 
   const onClickCard = (id:number) => {
-    navigate('/productdetails/' +id)
+    navigate('/productdetails/' + id)
 
 
   }

@@ -1,12 +1,13 @@
 import styles from './Nav.module.css'
 import logo from '../../assets/homePageLogo.png'
+import Logo from '../Logo/Logo'
 const Nav = () => {
   return (
     <header className={styles.navbar}>
          <div className={styles.navbarLogo}>
           <a href="#home" style={{
             color: 'white'
-          }}><img src={logo}/></a>
+          }}><Logo/></a>
         </div>
       <nav className={styles.navbarMenu}>
        
