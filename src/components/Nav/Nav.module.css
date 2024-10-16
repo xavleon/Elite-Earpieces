@@ -54,38 +54,29 @@
 
 .brackets ul li a:before,
 .brackets ul li a:after {
-  content: "";
-  position: absolute;
-  display: block;
-  border: 0px solid transparent;
-  width: 0%;
-  height: 0%;
-  transition: all 0.3s ease;
-}
-.brackets ul li a:before {
-  width: 0%;
-  height: 0%;
-  right: 0;
-  bottom: 0;
-  border-bottom: 2px solid transparent;
-  border-right: 2px solid transparent;
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: -5px;
+    transition: all 0.4s ease;
 }
 
+.brackets ul li a:before {
+    content: '(';
+    left: 2px;
+    transform: translateX(50px);
+}
 
 .brackets ul li a:after {
-  width: 0%;
-  height: 0%;
-  top: 0;
-  left: 0;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
+    content: ')';
+    right: 2px;
+    transform: translateX(-50px);
 }
 
 .brackets ul li a:hover:before,
 .brackets ul li a:hover:after {
-  width: 10px;
-  height: 10px;
-  border-color: #fff;
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 /* Sign-up button */
