@@ -45,6 +45,7 @@
   text-rendering: optimizeLegibility;
 }
 
+
 html {
   font-size: 100%;
   box-sizing: inherit;
@@ -155,10 +156,7 @@ video {
   color: var(--color-white-200);
 }
 
-.btn-primary {
- background-color:blue;
- 
-}
+
 
 .btnInline {
   display: inline-flex;

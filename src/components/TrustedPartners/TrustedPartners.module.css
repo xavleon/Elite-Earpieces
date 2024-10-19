@@ -1,0 +1,77 @@
+
+
+.trustedPartnersContainer{
+    background-color: #080A0C;
+    padding: 125px;
+    padding-bottom: 5px;
+
+
+}
+
+.trustedPartnersContainer ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+    
+    
+}
+.horizontalLine{
+    width: 600px;
+
+    height: 2px;
+
+    margin: auto;
+    margin-top: 100px;
+ 
+}
+
+
+.trustedPartnersContainer h1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    color: #e7e4e4;
+    
+    
+}
+.trustedPartnersContainer h3{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #b2b1b1;
+    
+}
+
+.trustedPartnersContainer ol{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    font-size: 50px; /* Increase the size of the icons */
+    
+
+ 
+}
+
+.trustedPartnersContainer li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.trustedPartnersContainer i{
+    font-size: 5rem;
+   
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');

@@ -1,0 +1,5 @@
+.featureCards{
+    display: flex;
+    background-color: red;
+    gap: 50px;
+}
