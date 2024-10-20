@@ -9,11 +9,12 @@ import Homepage from './Pages/Homepage'
 import ProductDetails from './Pages/ProductDetails'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
+import { RootState } from './redux/store'
 
 
 function App() {
  
-  const mode = useSelector(state => state.theme)
+  const mode = useSelector((state:RootState) => state.theme)
 
  
   return (

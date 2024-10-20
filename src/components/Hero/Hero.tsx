@@ -1,8 +1,11 @@
 
+import { useSelector } from 'react-redux';
 import styles from './Hero.module.css'
 import { FaFacebook,FaInstagram,FaSquareTwitter, FaSquareYoutube  } from "react-icons/fa6";
+import { RootState } from '../../redux/store';
 
 const Hero = () => {
+   const mode = useSelector((state: RootState) => state.theme )
   return (
     
    
@@ -12,7 +15,7 @@ const Hero = () => {
          <img className={styles.bannerImage} src="https://i.ibb.co/vB5LTFG/Headphone.png" alt="banner"/>
          <div className={styles.bannerInner}>
             <h1 className={styles.headingXl}>Experience Media Like Never Before</h1>
-            <p className={styles.paragraph}>
+            <p className={mode? styles.paragraph:styles.paragraphDay}>
                Enjoy award-winning stereo beats with wireless listening freedom and sleek,
                streamlined with premium padded and delivering first-rate playback.
             </p>
@@ -22,7 +25,7 @@ const Hero = () => {
 
            
          </div>
-         <div className={styles.bannerLinks} >
+         <div className={`${styles.bannerLinks} ${mode ? styles.bannerLinks : styles.bannerLinksDay}`}>
             <a href="#" title=""><i className={`${styles.bx} ${styles.bxlFacebook}`}>
             </i><FaFacebook /></a>
             <a href="#" title=""><i className={`${styles.bx} ${styles.bxlInstagram}`}></i><FaInstagram /></a>

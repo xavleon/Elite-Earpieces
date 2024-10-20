@@ -31,6 +31,20 @@
   --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 
 html {
   font-size: 100%;
@@ -135,18 +149,11 @@ video {
   line-height: 1.5;
 }
 
-.paragraph {
-  font-family: inherit;
-  font-size: clamp(1rem, 2vw, 1.125rem);
-  text-wrap: balance;
-  color: var(--color-white-200);
-}
 .paragraphDay {
   font-family: inherit;
   font-size: clamp(1rem, 2vw, 1.125rem);
   text-wrap: balance;
-  color: black;
-
+  color: red
 }
 
 
@@ -401,7 +408,6 @@ video {
   .bannerImage {
     max-width: 25rem;
     margin-right: 5rem;
-    
   }
 }
 
@@ -421,12 +427,9 @@ video {
   row-gap: 0.8rem;
   opacity: 0;
   visibility: hidden;
-  
-  
+
   
 }
-
-
 
 @media only screen and (min-width: 64rem) {
   .bannerLinks {
@@ -436,6 +439,11 @@ video {
   }
 }
 
+.bannerLinks > * {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--color-white-100);
+}
 
 .bannerLinks::before {
   position: absolute;
@@ -444,7 +452,7 @@ video {
   width: 4rem;
   height: 1.5px;
   transform: rotate(90deg);
-  
+  background: var(--color-white-100);
 }
 
 .bannerLinks::after {
@@ -454,21 +462,5 @@ video {
   width: 4rem;
   height: 2px;
   transform: rotate(90deg);
- 
- 
-}
-
-.bannerLinks::after {
-  background: white;  /* Temporary background to test if the lightMode is applied */
-}
-
-.bannerLinks::before {
-  background: white;  /* Temporary background to test if the darkMode is applied */
-}
-
-.bannerLinksDay::before{
-  background: black;
-}
-.bannerLinksDay::after{
-  background:black;
+  background: var(--color-white-100);
 }

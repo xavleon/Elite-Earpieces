@@ -1,8 +1,9 @@
 import { useSelector } from "react-redux"
+import { RootState } from "../../redux/store"
 
 
 const Footer = () => {
-    const mode = useSelector(state => state.theme)
+    const mode = useSelector((state:RootState) => state.theme)
 
   return (
     <footer className="footer bg-base-200 text-base-content p-10">
