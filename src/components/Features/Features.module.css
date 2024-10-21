@@ -1,5 +1,14 @@
+.featureCardsContainer{
+    
+}
+
+
+
 .featureCards{
     display: flex;
     background-color: red;
     gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }

@@ -3,7 +3,7 @@ import featureData from "./FeatureData";
 import styles from "./Features.module.css"
 const Features = () => {
   return (
-    <div>
+    <div className={styles.featureCardsContainer}>
       <h1>Features</h1>
       <div className={styles.featureCards}>
 

@@ -10,9 +10,12 @@ import styles from "./FeatureCard.module.css"
   
   const FeatureCard = ({ feature }:FeatureProp) => {
     return (
-      <div className={styles.featureCard}>
+      <div className={styles.featureCard }>
+        <div className={styles.feaureCardTitle}>
         <i className={feature.icon}></i>
+        
         <h1>{feature.Title}</h1>
+        </div>
         <h3>{feature.Description}</h3> {/* Corrected spelling */}
       </div>
     );

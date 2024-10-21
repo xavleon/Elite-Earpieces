@@ -3,4 +3,30 @@
     flex-direction: column;
     gap: 20px;
     background-color: aqua;
+    flex: 1 1 30%;
+    margin: 10px
+
+}
+
+.feaureCardTitle{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.featureCard i{
+    font-size: 3rem;
+    background-color: #EBEBEB;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    color: #444444;
+
+   
+}
+
+.featureCard h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600; /* Semi Bold */
+    font-size: 21px;
+    color: #444444;
 }
