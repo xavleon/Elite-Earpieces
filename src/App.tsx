@@ -10,6 +10,7 @@ import ProductDetails from './Pages/ProductDetails'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from './redux/store'
+import AboutUs from './Pages/AboutUs'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 <Nav  />    
 <Routes>
 <Route path="/" element={<Homepage />} />
+<Route path="/about" element={<AboutUs/>}/>
 <Route path="/productdetails/:id" element={<ProductDetails />} />
 </Routes>
 <Footer />

@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 
 
-const Nav = ({toggle}) => {
+const Nav = () => {
 
   const dispatch = useDispatch();
 
@@ -25,7 +25,7 @@ const Nav = ({toggle}) => {
           <li ><a href="/">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#products">Products</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="/about">About</a></li>
           <li><input type="checkbox" className={styles.themeCheckbox} onChange={() => dispatch(toggleTheme())}></input></li>
 
 
