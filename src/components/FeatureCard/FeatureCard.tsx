@@ -1,25 +1,23 @@
 type FeatureProp = {
-    feature : {
+  feature: {
     Title: string;
     icon: string;
-    Description: string; 
-    }
+    Description: string;
   };
-  
-import styles from "./FeatureCard.module.css"
-  
-  const FeatureCard = ({ feature }:FeatureProp) => {
-    return (
-      <div className={styles.featureCard }>
-        <div className={styles.feaureCardTitle}>
-        <i className={feature.icon}></i>
-        
+};
+
+import styles from "./FeatureCard.module.css";
+
+const FeatureCard = ({ feature }: FeatureProp) => {
+  return (
+    <div className={styles.featureCard}>
+      <i className={feature.icon}></i>
+      <div className={styles.feaureCardTitle}>
         <h1>{feature.Title}</h1>
-        </div>
         <h3>{feature.Description}</h3> {/* Corrected spelling */}
       </div>
-    );
-  };
-  
-  export default FeatureCard;
-  
+    </div>
+  );
+};
+
+export default FeatureCard;
