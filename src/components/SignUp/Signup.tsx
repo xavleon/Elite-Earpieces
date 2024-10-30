@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+
+type SignupFormType = {
+  fullName: string;
+  email: string;
+  password: string;
+};
 
 // Define validation schema using Yup
 const schema = yup.object().shape({
@@ -29,14 +35,14 @@ const SignUp = () => {
   });
 
   // Handle form submission
-  const onSubmit = (data) => {
+  const onSubmit = (data: SignupFormType) => {
     console.log(data);
   };
 
   return (
     <div className="bg-gradient-to-br from-black via-blue-500 to-white min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-4">
-        <div className="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+        <div className="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-2xl  transition-transform duration-300">
           <div className="text-center py-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
             <h1 className="text-3xl font-bold">Welcome</h1>
             <p className="mt-2">Join our amazing community</p>
